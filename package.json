@@ -1,0 +1,19 @@
+{
+  "name": "jobportal",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd job-portal-backend && npm start",
+    "start:frontend": "cd job-portal-frontend && npm start"
+  },
+  "author": "shashank",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@nestjs/config": "^3.2.0"
+  }
+}
